@@ -1,0 +1,28 @@
+<m-container>
+  <form class="pure-form pure-form-stacked">
+    <label for="bpsys">Blood Pressure Sys</label>
+    <input id="bpsys" type="number" min="0" max="300" [(ngModel)]="bpsys"  [ngModelOptions]="{standalone: true}">
+    <label for="bpsys">Blood Pressure Dia</label>
+    <input id="bpdia" type="number" min="0" max="300" [(ngModel)]="bpdia"  [ngModelOptions]="{standalone: true}">
+    <label for="bpsys">Glucose Level</label>
+    <input id="glucose" type="number" min="0" max="300" [(ngModel)]="glucose"  [ngModelOptions]="{standalone: true}">
+    <button class="pure-button" (click)="addReading()">Log Reading</button>
+    <button class="pure-button" (click)="resetDB()">Reset DB</button>
+  </form>
+
+  <canvasjs-chart [options]="chartOptions" (chartInstance)="getChartInstance($event)"></canvasjs-chart>
+
+  <m-search-button (search)="filterTerm = $event"></m-search-button>
+  <m-table
+    [data]="allReadings"
+    [tableHeaders]="tableHeaders"
+    [filterTerm]="filterTerm"
+    [showDeleteButton]="true"
+    [showMoreDetails]="true"
+    [showCaption]="true"
+    caption="Reading List"
+    (remove)="removeReading($event)"
+    (navigate)="navigateToDetails($event)">
+  </m-table>
+
+</m-container>

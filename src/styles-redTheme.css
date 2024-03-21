@@ -7,8 +7,8 @@
 body {
     line-height: 1.7em;
     font-size: 13px;
-    background-color: white;
-    color: rgb(12,35,64);
+    background-color: #f1faee;
+    color: #1d3557;
     font-family: Arial, Helvetica, sans-serif;
 }
 p {
@@ -16,7 +16,7 @@ p {
     font-size:20px;
 }
 .pure-menu{
-    background-color: white;
+    background-color: #f1faee;
 }
 
 h1,
@@ -26,7 +26,7 @@ h4,
 h5,
 h6,
 label {
-    color: rgb(12,35,64);
+    color: #1d3557;
 }
 
 .pure-img-responsive {
@@ -64,8 +64,7 @@ label {
 }
 
 .pure-form input[type] {
-    /* border: 2px solid #ddd; */
-    border: 2px solid  rgb(12,35,64);
+    border: 2px solid #ddd;
     box-shadow: none;
     font-size: 100%;
     width: 100%;
@@ -77,17 +76,13 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #e8e9e9;
-    color: rgb(12,35,64);
+    background-color: #a8dadc;
+    color: #1d3557;
     font-weight: bolder;
     margin:10px;
     width:100%;
     font-size: 20px;
     padding: 0.5em 2em;
-
-    /* Added */
-    border-radius: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a.pure-button-primary {
@@ -101,7 +96,7 @@ a.pure-button-primary {
 
 .home-menu {
     text-align: center;
-    background: rgb(238,39,55);
+    background: #e63946;
 }
 
 .pure-menu-link{
@@ -109,24 +104,23 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: white;  
+    color: #f1faee;  
     font-size: 220%;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .home-menu .pure-menu-selected a {
-    color: white;
+    color: #f1faee;
 }
 
 .home-menu a {
-    color: white;
+    color: #f1faee;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: rgb(12,35,64);
+    color: #a8dadc;
 }
 
 
@@ -138,7 +132,7 @@ a.pure-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
-    background-color: white;
+    background-color: #f1faee;
 
 
 }
@@ -146,7 +140,7 @@ a.pure-button-primary {
 /* We want to give the content area some more padding */
 .content {
     padding: 1em 1em 3em;
-    background-color: white;
+    background-color: #f1faee;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -178,11 +172,11 @@ a.pure-button-primary {
 
 /* This is the class used for the footer */
 .footer {
-    background: rgb(12,35,64);
+    background: #1d3557;
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: #f1faee;
     padding: 5px;
 }
 
